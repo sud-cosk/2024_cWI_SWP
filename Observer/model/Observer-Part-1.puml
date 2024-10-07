@@ -1,0 +1,13 @@
+@startuml Observer-Part-1
+
+class NewsChannel
+{
+
+    -name:string
+
+    +NewsChannel(name:string)
+    +notify(message: string)
+}
+
+
+@enduml
