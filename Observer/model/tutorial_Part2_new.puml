@@ -1,0 +1,30 @@
+@startuml
+
+
+package java.lang
+{
+    class Object
+    {
+        + toString() : string
+
+    }
+
+}
+
+package com.example.newsbroker
+{
+    class NewsChannel
+    {
+        - name : String
+
+        + NewsChannel(name : String)
+        + getName() : Sting
+        + setName(name : String)
+        + toString() : String
+    }
+
+
+    Object <|-- NewsChannel
+
+}
+@enduml
